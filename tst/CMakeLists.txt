@@ -1,7 +1,7 @@
 set(Test_SRCS AllTests.cpp testStringToInt.cpp)
 
-# include CppUTest headers
 include_directories($ENV{CPPUTEST_HOME}/include)
+include_directories(${PROJECT_SOURCE_DIR}/include)
 
 add_library(cpputest STATIC IMPORTED)
 set_property(TARGET cpputest PROPERTY
